@@ -26,6 +26,8 @@ const USER_CONFIG = {
       useTemplateId: '5EcVAzBzheeoGT7v4ibml2FUgs0B-x8Ij9Lr5QhLKsw',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '12-27',
+      PROVINCE: '湖南',
+      CITY: '娄底',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
@@ -48,6 +50,31 @@ const USER_CONFIG = {
       ],
     },
   ],
+  SWITCH: {
+    /** 每日天气 */
+    // 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: true
+  },
+  TIAN_API: {
+    // 天行API KEY，如果使用天行API则需要填写此项
+    key: '7d821ce756c4eca3df41cba900bca200',
+    
+    /** 天行API相关，需要config中配置 TIAN_API_KEY  */
+    // 早安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    morningGreeting: true,
+  
+    // 晚安心语, 填 false 则不使用，按需关闭不使用的功能可以提高运行速度
+    eveningGreeting: true,
+  
+    // 天行天气（展示未来N天，最多7天）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
+    weather: 3,
+  
+    // 全网热搜榜（展示N条，最多30条）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
+    networkHot: 3,
+  
+    // 全网热搜榜展示类型，默认展示概要信息: ['title': 仅展示标题, 'default': 展示概要信息]
+    networkHotType: 'default',
+  },
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
