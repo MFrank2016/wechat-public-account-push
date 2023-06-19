@@ -13,8 +13,10 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: '9f68a2972d61033810401a9853832758',
 
-  PROVINCE: '广东',
-  CITY: '惠州',
+  // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
+  PROVINCE: '咸阳',
+  // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
+  CITY: '长武',
 
   USERS: [
     {
