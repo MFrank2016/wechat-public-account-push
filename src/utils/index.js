@@ -104,6 +104,7 @@ export const getConstellation = (date) => {
  */
 export const getWeatherCityInfo = (province, city) => {
   let prov = null
+  console.log(`province: 【${province}】, city：【${city}】 `)
   if (province) {
     const provName = province.replace(/[省市]$/, '')
     prov = WEATHER_CITY.find((it) => it.city_name.indexOf(provName) !== -1)
