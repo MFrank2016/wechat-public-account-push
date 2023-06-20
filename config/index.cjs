@@ -17,6 +17,7 @@ const USER_CONFIG = {
   PROVINCE: '咸阳',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
   CITY: '长武',
+  
 
   USERS: [
     {
