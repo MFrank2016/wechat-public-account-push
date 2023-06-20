@@ -733,6 +733,7 @@ export const getAggregatedData = async () => {
   }
   const users = config.USERS
   for (const user of users) {
+    console.log(`user province : ${user.province}, user city : ${user.city}`)
     // 获取每日天气
     const useProvince = user.province || config.PROVINCE
     const useCity = user.city || config.CITY

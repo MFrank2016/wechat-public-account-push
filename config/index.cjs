@@ -17,7 +17,7 @@ const USER_CONFIG = {
   PROVINCE: '咸阳',
   // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
   CITY: '长武',
-  
+
 
   USERS: [
     {
@@ -29,8 +29,8 @@ const USER_CONFIG = {
       useTemplateId: 'MTCOJtWcX3C5WY3W_0qDjfzO9JybqEdbYb34a7QXHTE',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '12-27',
-      PROVINCE: '湖南',
-      CITY: '娄底',
+      province: '湖南',
+      city: '娄底',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
